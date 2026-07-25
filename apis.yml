@@ -1,8 +1,26 @@
 aid: contraline
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/contraline.png
 name: Contraline
-description: 'Contraline is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Contraline is a clinical-stage biotechnology company developing non-hormonal,
+  long-acting, reversible contraceptive options for men and couples. Its lead product, ADAM,
+  is an investigational implant designed to provide long-lasting reversible contraception,
+  and NES/T is a daily topical gel intended to pause sperm production. Backed by GV (Google
+  Ventures), Contraline runs clinical trials and participant programs from its Charlottesville,
+  Virginia base. Its products are investigational and have not been approved by the FDA. The
+  company operates a marketing and clinical-trial website with no public developer program or
+  API; this API Evangelist profile captures its web presence, privacy posture, and domain
+  security for the network catalog.'
 url: https://raw.githubusercontent.com/api-evangelist/contraline/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Contraception
+- Reproductive Health
+- Medical Devices
+- Clinical Trials
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +48,16 @@ maintainers:
 common:
 - type: Website
   url: http://www.contraline.com
+- type: Blog
+  url: https://www.contraline.com/news
+- type: PrivacyPolicy
+  url: https://www.contraline.com/privacy
+- type: Support
+  url: https://www.contraline.com/contact
+- type: DomainSecurity
+  url: security/contraline-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
